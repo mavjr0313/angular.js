@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: dgeni-packages
+    versions:
+    - 0.28.4
+    - 0.29.0
+  - dependency-name: grunt
+    versions:
+    - 1.3.0
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: eslint-plugin-promise
+    versions:
+    - 4.2.1
